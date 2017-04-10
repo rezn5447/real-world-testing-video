@@ -3,6 +3,7 @@
 # "IV" 4
 
 
-describe "RomanNumberalThing", ->
+describe "RomanNumeralThing", ->
   Given -> @subject = new ConvertsNumerals()
-  Then -> @subject != undefined
+  When -> @result = @subject.fromRoman("I")
+  Then -> @result == 1
